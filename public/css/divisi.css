@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    z-index: 2;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+/* Navbar */
+.manual-placement {
+    position: absolute;
+    top: 25px;
+    right: 1000px;
+}
+
+.navbar {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+/* .nav-color {
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0, 5s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out 0, 5s;
+}
+
+
+.navbar-scrolled .nav-link {
+    color: #000000;
+    transition: color 0.5s ease-in-out;
+}
+
+.navbar-scrolled .shadow-text {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.5s ease-in-out;
+} */
+
+.shadow-text {
+    font-size: 36px;
+    color: #000000; /* Warna teks */
+}
+
+.accent-img {
+    z-index: 1;
+}
+.img-hero {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    position: relative;
+    left: 150px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.btn.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.btn.dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+#biggestCats {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    width: 70px;
+    height: 19px;
+    font-size: 12px;
+}
+
+/* Hero Section */
+
+.hero-tagline {
+    position: relative;
+    top: 100px;
+}
+.hero-tagline h1 {
+    color: #ffffff;
+    text-align: left;
+    font: 600 48px "Poppins", sans-serif;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-tagline p {
+    color: #ffffff;
+    text-align: left;
+    font: 600 16px "Poppins", sans-serif;
+    position: relative;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#information {
+    background: #dfdfdf;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 900px;
+}
+
+.info-tagline h2 {
+    color: #000000;
+    font: 800 35px "Poppins", sans-serif;
+    position: relative;
+    left: 99px;
+    top: 29px;
+}
+
+.rectangle {
+    background: #000000;
+    border-radius: 5px;
+    width: 6px;
+    height: 41px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.box1 {
+    background: #ffffff;
+    border-radius: 40px;
+    width: 1314px;
+    height: 800px;
+    position: relative;
+    left: 100px;
+
+}
+
+/* Footer */
+#footer {
+    background: #7a7a7a;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 451px;
+}
+
+.footer-img {
+    position: relative;
+    top: 60px;
+}
+
+.footer-text {
+    position: relative;
+    top: 10px;
+}
+
+.text-light {
+    color: #fff; /* Mengubah warna teks menjadi putih */
+}
+
+.text-light ul {
+    list-style: none;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    padding: 0;
+}
+
+.text-light ul li {
+    margin-bottom: 10px;
+}
+
+.text-light ul li a {
+    color: #fff; /* Mengubah warna tautan (link) menjadi putih */
+    text-decoration: none; /* Menghapus garis bawah dari tautan */
+}
+
+.text-light ul li a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat tautan dihover */
+}
+
+.line {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 1350px;
+    height: 0px;
+    position: absolute;
+    left: 80px;
+    top: 370px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+
+/* Beberapa divisi */
+
+.box-divisi{
+    background: #d9d9d9;
+    border-radius: 15.98px;
+    width: 311.1px;
+    height: 71.84px;
+    position: absolute;
+    left: 152.8px;
+    top: 1054.54px;
+}
+
+
