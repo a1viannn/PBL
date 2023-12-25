@@ -22,8 +22,6 @@ class PendaftaranSeeder extends Seeder
             'cv' => '',
             'divisi_1' => 1,
             'divisi_2' => 2,
-            'status' => '',
-            'jabatan' => '',
         ]);
     }
 }

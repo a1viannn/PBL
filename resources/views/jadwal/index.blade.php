@@ -46,10 +46,12 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('edit-jadwal', $item->id) }}" class="btn btn-warning btn-sm"><i
-                                                class="fas fa-edit"></i> Edit</a>
-                                        <a href="{{ route('delete-jadwal', $item->id) }}" class="btn btn-danger btn-sm"><i
-                                                class="fas fa-trash"></i> Hapus</a>
+                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('delete-jadwal', $item->id) }}" method="POST">
+                                            <a href="{{ route('edit-jadwal', $item->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</a>
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-sm"> Hapus</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

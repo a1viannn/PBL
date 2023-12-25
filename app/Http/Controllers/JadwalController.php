@@ -76,6 +76,6 @@ class JadwalController extends Controller
     {
         $jadwals = Jadwal::findOrFail($id);
         $jadwals->delete();
-        return back()->with('info', 'Data Berhasil Dihapus');
+        return back()->with('toast_success', 'Data Berhasil Dihapus');
     }
 }

@@ -18,7 +18,7 @@ class Divisi extends Model
 
     public function jadwal()
     {
-        return $this->hasMany('App\Models\Jadwal');
+        return $this->hasMany(Jadwal::class);
     }
 
     public function pendaftaran(){

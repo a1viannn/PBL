@@ -3,7 +3,6 @@
 
 <head>
     @include('ukm.head')
-
 </head>
 
 <body>
@@ -31,10 +30,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 info-tagline">
-                    <h2>Selamat Datang</h2>
+                    <h2>PRESTASI UKM OLAHRAGA</h2>
 
 
-                    <h3>- ayo olahraga supaya tubuh tetap sehat -</h3>
                 </div>
 
                 <!-- Carausel Section -->

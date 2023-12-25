@@ -71,6 +71,6 @@ class DivisiController extends Controller
     {
         $divisis = Divisi::findOrFail($id);
         $divisis->delete();
-        return back()->with('info', 'Data Berhasil Dihapus');
+        return back()->with('toast_success', 'Data Berhasil Dihapus');
     }
 }

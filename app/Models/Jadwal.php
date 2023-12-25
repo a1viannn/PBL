@@ -12,9 +12,15 @@ class Jadwal extends Model
 
     protected $table = 'jadwals';
     protected $primaryKey = "id";
+    protected $fillable = [
+        'hari',
+        'waktu_mulai',
+        'waktu_selesai',
+        'divisi_id',
+    ];
 
     public function divisi()
     {
-        return $this->belongsTo('App\Models\Divisi');
+        return $this->belongsTo(Divisi::class);
     }
 }

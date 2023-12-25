@@ -13,27 +13,30 @@ return new class extends Migration
 {
     Schema::create('pendaftarans', function (Blueprint $table) {
         $table->id();
+
+        // mau di hapus
         $table->string('nama');
-        $table->string('nim');
+        $table->string('nim', 12);
         $table->string('prodi');
+
         $table->string('email');
         $table->string('no_telp');
         $table->string('cv');
 
-        $table->unsignedBigInteger('divisi_1'); 
+        $table->unsignedBigInteger('divisi_1');
         $table->foreign('divisi_1')
             ->references('id')
             ->on('divisis')
             ->onUpdate('cascade')->onDelete('cascade');
 
-        $table->unsignedBigInteger('divisi_2')->nullable(); 
+        $table->unsignedBigInteger('divisi_2')->nullable();
         $table->foreign('divisi_2')
             ->references('id')
             ->on('divisis')
             ->onUpdate('cascade')->onDelete('cascade');
 
-        $table->string('status');
-        $table->string('jabatan');
+        $table->string('status')->default('menunggu');
+        $table->string('jabatan')->default('anggota');
         $table->timestamps();
     });
 }

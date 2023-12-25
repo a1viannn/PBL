@@ -40,11 +40,4 @@ class LoginController extends Controller
         Auth::logout();
         return redirect('/');
     }
-
-
-     // ***REGISTER*** //
-     public function register()
-     {
-        return view('auth.register');
-     }
 }

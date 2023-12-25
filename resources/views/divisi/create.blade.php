@@ -33,7 +33,6 @@
                                     {{ $message }}
                                 </div>
                             @enderror
-                            
 
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Simpan Data</button>

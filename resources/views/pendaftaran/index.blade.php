@@ -14,7 +14,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                
+
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -27,6 +27,7 @@
                                 <th>Prodi</th>
                                 <th>Divisi 1</th>
                                 <th>Divisi 2</th>
+                                <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -39,25 +40,28 @@
                                     <td>{{ $item->nim }}</td>
                                     <td>{{ $item->prodi }}</td>
                                     <td>
-                                        @if($item->divisi1)
-                                            {{$item->divisi1->nama}}
+                                        @if ($item->divisi1)
+                                            {{ $item->divisi1->nama }}
                                         @else
                                             "tidak ada divisi yang cocok"
                                         @endif
                                     </td>
                                     <td>
-                                        @if($item->divisi2)
-                                            {{$item->divisi2->nama}}
+                                        @if ($item->divisi2)
+                                            {{ $item->divisi2->nama }}
                                         @else
                                             "tidak ada divisi yang cocok"
                                         @endif
                                     </td>
                                     <td>
-
-                                            <a href="{{ route('detail-pendaftaran', $item->id)}}" class="btn btn-warning btn-sm"><i
-                                                    class="fas fa-edit"></i> Detail</a>
-
-
+                                        @if ($item->status == 'menunggu')
+                                            <span class="badge badge-warning">Belum
+                                                <br> Terverifikasi
+                                            </span>
+                                        @endif
+                                    <td>
+                                        <a href="{{ route('detail-pendaftaran', $item->id) }}"
+                                            class="btn btn-primary  btn-sm"><i class="fas fa-eye"></i> Detail</a>
                                     </td>
                                 </tr>
                             @endforeach
